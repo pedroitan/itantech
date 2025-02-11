@@ -19,7 +19,7 @@ export const Hero = () => {
         className="absolute inset-0 -z-10 transition-transform duration-300 ease-out"
         style={{
           backgroundImage: "url('/assets/capa.png')",
-          backgroundPosition: 'center',
+          backgroundPosition: 'center 25%',
           backgroundSize: 'cover',
           opacity: 0.2,
           transform: `translate3d(${mousePosition.x}px, ${mousePosition.y}px, 0)`
@@ -45,7 +45,7 @@ export const Hero = () => {
             
             <AnimatedTitle 
               text="ITAN TECH - Soluções em Audiovisual"
-              className="text-6xl font-bold mb-8 reveal-text text-white"
+              className="text-3xl sm:text-6xl font-bold mb-8 reveal-text text-white"
             />
           </div>
           
@@ -57,7 +57,7 @@ export const Hero = () => {
               transition: 'all 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s'
             }}
           >
-            <p className="text-xl text-gray-300 mb-12 leading-relaxed">
+            <p className="text-base sm:text-xl text-gray-300 mb-12 leading-relaxed">
               De estúdios de transmissão a espaços de performance, a Itan Tech projeta e implementa 
               soluções audiovisuais de ponta que transformam sua visão em realidade.
             </p>
