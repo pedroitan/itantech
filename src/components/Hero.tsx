@@ -18,7 +18,7 @@ export const Hero = () => {
       <div 
         className="absolute inset-0 -z-10 transition-transform duration-300 ease-out"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1589903308904-1010c2294adc')",
+          backgroundImage: "url('/assets/capa.png')",
           backgroundPosition: 'center',
           backgroundSize: 'cover',
           opacity: 0.2,
@@ -44,7 +44,7 @@ export const Hero = () => {
             </div>
             
             <AnimatedTitle 
-              text="Inovação Audiovisual pela Itan Tech"
+              text="ITAN TECH - Soluções em Audiovisual"
               className="text-6xl font-bold mb-8 reveal-text text-white"
             />
           </div>
