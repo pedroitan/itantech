@@ -5,6 +5,7 @@ import { useSmoothTransition } from '../hooks/useSmoothTransition';
 import { useRevealEffect } from '../hooks/useRevealEffect';
 import { AnimatedTitle } from './AnimatedTitle';
 import { ParallaxCard } from './ParallaxCard';
+import heroImage from '../assets/capa.png';
 
 export const Hero = () => {
   const mousePosition = useMouseParallax(0.05);
@@ -18,7 +19,7 @@ export const Hero = () => {
       <div 
         className="absolute inset-0 -z-10 transition-transform duration-300 ease-out"
         style={{
-          backgroundImage: "url('/assets/capa.png')",
+          backgroundImage: `url(${heroImage})`,
           backgroundPosition: 'center 25%',
           backgroundSize: 'cover',
           opacity: 0.2,
