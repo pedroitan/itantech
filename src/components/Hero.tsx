@@ -5,7 +5,7 @@ import { useSmoothTransition } from '../hooks/useSmoothTransition';
 import { useRevealEffect } from '../hooks/useRevealEffect';
 import { AnimatedTitle } from './AnimatedTitle';
 import { ParallaxCard } from './ParallaxCard';
-import heroImage from '../assets/capa.png';
+import heroImage from '../../assets/capa.png';
 
 export const Hero = () => {
   const mousePosition = useMouseParallax(0.05);
