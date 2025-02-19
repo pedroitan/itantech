@@ -40,7 +40,7 @@ export const Hero = () => {
             <div className="inline-flex items-center gap-2 bg-blue-900/50 px-4 py-2 rounded-full mb-8 animate-float">
               <Radio className="w-4 h-4 text-blue-400" />
               <span className="text-sm text-blue-400 font-medium">
-                Itan Tech | Soluções Audiovisuais Profissionais
+                Itan Tech | Consultoria Audiovisual
               </span>
             </div>
             
