@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 
 // Character pools based on character types
 const pools = {
@@ -23,7 +23,6 @@ export const useTextScramble = (text: string, duration = 20000) => {
     setIsScrambling(true);
 
     const iterations = 20;
-    const updateRate = duration / iterations;
 
     let step = 0;
 

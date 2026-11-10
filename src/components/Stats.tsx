@@ -2,7 +2,7 @@ import React from 'react';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 
 const stats = [
-  { value: '25+', label: 'Anos de Experiência' },
+  { value: '25+', label: 'Anos de Experiência do Fundador' },
   { value: '500+', label: 'Projetos Concluídos' },
   { value: '50+', label: 'Estúdios de Transmissão' },
   { value: '100%', label: 'Satisfação dos Clientes' }

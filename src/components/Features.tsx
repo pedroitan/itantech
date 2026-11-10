@@ -51,7 +51,7 @@ export const Features = () => {
             className="text-4xl font-bold mb-4 reveal-text text-white"
           />
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Serviços de consultoria especializada para todas as suas necessidades audiovisuais, do conceito à conclusão.
+            Serviços especializados para suas necessidades audiovisuais e de tecnologia para eventos, do conceito à conclusão.
           </p>
         </div>
         

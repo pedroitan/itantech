@@ -1,17 +1,35 @@
 import React from 'react';
-import { Hero } from './components/Hero';
-import { Features } from './components/Features';
-import { ParallaxSection } from './components/ParallaxSection';
-import { Stats } from './components/Stats';
+import { RouterProvider, useRouter } from './lib/router';
+import { Navbar } from './components/Navbar';
+import { Footer } from './components/Footer';
+import { Home } from './pages/Home';
+import { Contato } from './pages/Contato';
+import { Privacidade } from './pages/Privacidade';
+import { Termos } from './pages/Termos';
+
+const Routes = () => {
+  const { path } = useRouter();
+  switch (path) {
+    case '/contato':
+      return <Contato />;
+    case '/privacidade':
+      return <Privacidade />;
+    case '/termos':
+      return <Termos />;
+    default:
+      return <Home />;
+  }
+};
 
 function App() {
   return (
-    <div className="overflow-hidden">
-      <Hero />
-      <Features />
-      <ParallaxSection />
-      <Stats />
-    </div>
+    <RouterProvider>
+      <div className="overflow-hidden">
+        <Navbar />
+        <Routes />
+        <Footer />
+      </div>
+    </RouterProvider>
   );
 }
 

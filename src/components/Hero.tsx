@@ -1,10 +1,11 @@
 import React from 'react';
-import { Radio, Tv, Music, ArrowRight } from 'lucide-react';
+import { Radio, ArrowRight } from 'lucide-react';
 import { useMouseParallax } from '../hooks/useMouseParallax';
 import { useSmoothTransition } from '../hooks/useSmoothTransition';
 import { useRevealEffect } from '../hooks/useRevealEffect';
 import { AnimatedTitle } from './AnimatedTitle';
 import { ParallaxCard } from './ParallaxCard';
+import { Link } from '../lib/router';
 import heroImage from '../assets/capa.png';
 
 export const Hero = () => {
@@ -40,12 +41,12 @@ export const Hero = () => {
             <div className="inline-flex items-center gap-2 bg-blue-900/50 px-4 py-2 rounded-full mb-8 animate-float">
               <Radio className="w-4 h-4 text-blue-400" />
               <span className="text-sm text-blue-400 font-medium">
-                Itan Tech | Consultoria Audiovisual
+                Itan Tech | Audiovisual e Tecnologia para Eventos
               </span>
             </div>
             
             <AnimatedTitle 
-              text="ITAN TECH - Soluções em Audiovisual"
+              text="ITAN TECH - Soluções em Audiovisual e Tecnologia para Eventos"
               className="text-3xl sm:text-6xl font-bold mb-8 reveal-text text-white"
             />
           </div>
@@ -60,17 +61,23 @@ export const Hero = () => {
           >
             <p className="text-base sm:text-xl text-gray-300 mb-12 leading-relaxed">
               De estúdios de transmissão a espaços de performance, a Itan Tech projeta e implementa 
-              soluções audiovisuais de ponta que transformam sua visão em realidade.
+              soluções audiovisuais e de tecnologia para eventos que transformam sua visão em realidade.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="group px-8 py-4 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-all duration-300 flex items-center gap-2 hover:gap-4">
+              <Link
+                to="/contato"
+                className="group px-8 py-4 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-all duration-300 flex items-center gap-2 hover:gap-4"
+              >
                 Agendar Consultoria
                 <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
-              </button>
-              <button className="px-8 py-4 bg-white/10 text-white rounded-lg font-medium border border-white/20 hover:bg-white/20 transition-all duration-300">
-                Ver Portfólio
-              </button>
+              </Link>
+              <Link
+                to="/#plataforma"
+                className="px-8 py-4 bg-white/10 text-white rounded-lg font-medium border border-white/20 hover:bg-white/20 transition-all duration-300"
+              >
+                Conheça a Plataforma
+              </Link>
             </div>
           </div>
         </ParallaxCard>

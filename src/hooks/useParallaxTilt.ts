@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 export const useParallaxTilt = (intensity = 20) => {
   const [tilt, setTilt] = useState({ x: 0, y: 0 });

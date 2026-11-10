@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { useMouseParallax } from '../hooks/useMouseParallax';
+import { Link } from '../lib/router';
 
 export const ParallaxSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -41,9 +42,12 @@ export const ParallaxSection = () => {
             que seus sistemas audiovisuais superem os padrões da indústria e entreguem 
             performance excepcional.
           </p>
-          <button className="group px-8 py-4 bg-white text-blue-900 rounded-lg font-medium hover:bg-blue-50 transition-all duration-300 hover:scale-105">
-            Conheça Nossos Projetos
-          </button>
+          <Link
+            to="/contato"
+            className="inline-block px-8 py-4 bg-white text-blue-900 rounded-lg font-medium hover:bg-blue-50 transition-all duration-300 hover:scale-105"
+          >
+            Fale Conosco
+          </Link>
         </div>
       </div>
     </section>
