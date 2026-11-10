@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const Section = ({ title, children }: { title: string; children: React.ReactNode }) => (
   <section className="mb-10">
@@ -8,6 +8,10 @@ const Section = ({ title, children }: { title: string; children: React.ReactNode
 );
 
 export const Privacidade = () => {
+  useEffect(() => {
+    document.title = 'Política de Privacidade — Itan Tech';
+  }, []);
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-black to-blue-950 pt-32 pb-24">
       <div className="container mx-auto px-6 max-w-3xl">
@@ -81,7 +85,7 @@ export const Privacidade = () => {
 
         <Section title="6. Retenção dos dados">
           <p>
-            Os dados de convidados de um evento são mantidos por até <strong>12 meses</strong>{' '}
+            Os dados de convidados de um evento são mantidos por até <strong>90 dias</strong>{' '}
             após a realização do evento; depois desse prazo, são excluídos ou anonimizados, salvo
             quando a conservação for exigida por lei. Dados enviados pelo formulário de contato
             são mantidos enquanto durar a relação comercial e pelo prazo necessário ao

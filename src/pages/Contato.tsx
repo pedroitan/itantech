@@ -1,4 +1,4 @@
-import React, { useState, type FormEvent } from 'react';
+import React, { useEffect, useState, type FormEvent } from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
 
 const encode = (data: Record<string, string>) =>
@@ -8,6 +8,10 @@ const encode = (data: Record<string, string>) =>
 
 export const Contato = () => {
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
+
+  useEffect(() => {
+    document.title = 'Contato — Itan Tech';
+  }, []);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();

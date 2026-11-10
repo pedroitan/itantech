@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from '../lib/router';
 
 const Section = ({ title, children }: { title: string; children: React.ReactNode }) => (
@@ -9,6 +9,10 @@ const Section = ({ title, children }: { title: string; children: React.ReactNode
 );
 
 export const Termos = () => {
+  useEffect(() => {
+    document.title = 'Termos de Uso — Itan Tech';
+  }, []);
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-black to-blue-950 pt-32 pb-24">
       <div className="container mx-auto px-6 max-w-3xl">
